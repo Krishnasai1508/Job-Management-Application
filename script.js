@@ -53,20 +53,20 @@ function submitjob() {
   jobCard.classList.add('jobscards');
   jobCard.innerHTML = `
     <div class="com-icon">
-      <img src="image/" alt="${companyName} icon">
+      <img src="/image/" alt="${companyName} icon">
       <span>Just now</span>
     </div>
     <span>${jobTitle}</span>
     <div class="infomation">
       <div class="experience">
-        <img src="image/experienc.png" alt="experience icon">
+        <img src="/image/experienc.png" alt="experience icon">
         1-3 yr Exp
       </div>
       <div class="onsite">
-        <img src="image/onsite.png" alt="onsite icon"> Onsite
+        <img src="/image/onsite.png" alt="onsite icon"> Onsite
       </div>
       <div class="package">
-        <img src="image/package.png" alt="package icon">
+        <img src="/image/package.png" alt="package icon">
         ${salaryMax}
       </div>
     </div>
