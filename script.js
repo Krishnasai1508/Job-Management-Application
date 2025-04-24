@@ -49,24 +49,31 @@ function submitjob() {
   const deadline = document.getElementById('date').value;
   const description = document.getElementById('description').value;
 
+
+  const experiencelogo = "image/experienc.png";
+  const onsitelogo = "image/onsite.png";
+  const packagelogo =  "image/package.png";
+
+
+
   const jobCard = document.createElement('div');
   jobCard.classList.add('jobscards');
   jobCard.innerHTML = `
     <div class="com-icon">
-      <img src="/image/" alt="${companyName} icon">
+      <img src="image/" alt="${companyName} icon">
       <span>Just now</span>
     </div>
     <span>${jobTitle}</span>
     <div class="infomation">
       <div class="experience">
-        <img src="/image/experienc.png" alt="experience icon">
+        <img src=${experiencelogo} alt="experience icon">
         1-3 yr Exp
       </div>
       <div class="onsite">
-        <img src="/image/onsite.png" alt="onsite icon"> Onsite
+        <img src=${onsitelogo} alt="onsite icon"> Onsite
       </div>
       <div class="package">
-        <img src="/image/package.png" alt="package icon">
+        <img src=${packagelogo} alt="package icon">
         ${salaryMax}
       </div>
     </div>
