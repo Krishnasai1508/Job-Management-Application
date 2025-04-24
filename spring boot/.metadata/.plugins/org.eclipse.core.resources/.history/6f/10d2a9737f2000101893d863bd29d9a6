@@ -1,0 +1,9 @@
+package comjobmanagement.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.jobmanagement.dto.jobmanagement;
+
+public interface jobmanagement_Repository extends JpaRepository<jobmanagement, Integer>{
+
+}

@@ -1,0 +1,99 @@
+package com.jobmanagement.dto;
+
+import jakarta.annotation.Generated;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
+public class JobManagement {
+	
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int jobid;
+	
+	private String jobname;
+	
+	private String companyname;
+	
+	private String location;
+	
+	private String jobtype;
+	
+	private String salary;
+	
+	private String description;
+	
+	
+	
+
+	public int getJobid() {
+		return jobid;
+	}
+
+	public void setJobid(int jobid) {
+		this.jobid = jobid;
+	}
+
+	public String getJobname() {
+		return jobname;
+	}
+
+	public void setJobname(String jobname) {
+		this.jobname = jobname;
+	}
+
+	public String getCompanyname() {
+		return companyname;
+	}
+
+	public void setCompanyname(String companyname) {
+		this.companyname = companyname;
+	}
+
+	public String getLocation() {
+		return location;
+	}
+
+	public void setLocation(String location) {
+		this.location = location;
+	}
+
+	public String getJobtype() {
+		return jobtype;
+	}
+
+	public void setJobtype(String jobtype) {
+		this.jobtype = jobtype;
+	}
+
+	public String getSalary() {
+		return salary;
+	}
+
+	public void setSalary(String salary) {
+		this.salary = salary;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	
+	
+	@Override
+	public String toString() {
+		return "jobmanagement [jobid=" + jobid + ", jobname=" + jobname + ", companyname=" + companyname + ", location="
+				+ location + ", jobtype=" + jobtype + ", salary=" + salary + ", description=" + description + "]";
+	}
+	
+	
+	
+	
+}

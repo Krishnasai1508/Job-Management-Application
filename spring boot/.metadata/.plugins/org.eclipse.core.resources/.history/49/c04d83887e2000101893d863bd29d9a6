@@ -1,0 +1,5 @@
+package comjobmanagement.repository;
+
+public interface jobmanagement_Repository {
+
+}

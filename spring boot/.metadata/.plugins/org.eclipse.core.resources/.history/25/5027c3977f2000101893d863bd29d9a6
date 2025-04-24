@@ -1,0 +1,20 @@
+package com.jobmanagement.dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.jobmanagement.dto.jobmanagement;
+
+import comjobmanagement.repository.jobmanagement_Repository;
+
+@Repository
+public class JobManagement_Dao {
+	
+	@Autowired
+	jobmanagement_Repository repository;
+	
+	public jobmanagement saveJob(jobmanagement job) {
+		return repository.save(job);
+	}
+
+}
